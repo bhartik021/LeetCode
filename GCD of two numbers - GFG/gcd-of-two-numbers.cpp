@@ -10,14 +10,9 @@ class Solution
     int gcd(int A, int B) 
 	{ 
 	    // code here
-	    while(A != B){
-	        if(A > B) {
-	            A = A - B;
-	        } else {
-	            B = B - A;
-	        }
-	    }
+	    if(B == 0)
 	    return A;
+	    return gcd(B, A % B);
 	} 
 };
 
