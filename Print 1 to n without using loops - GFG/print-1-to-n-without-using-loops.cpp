@@ -10,12 +10,9 @@ public:
     void printTillN(int N)
     {
         // Write Your Code here
-        if(N == 0)
-        return;
-        if(N > 0) {
-            printTillN(N - 1);
-            cout<<N<<" ";
-        }
+        if(N == 0) return;
+        printTillN(N - 1);
+        cout << N << " ";
     }
 };
 
